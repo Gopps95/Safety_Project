@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Priority Calculator</h1>
+        <div class="input-container">
+            <label for="o">Input O:</label>
+            <input type="number" id="o" min="0" max="10">
+        </div>
+        <div class="input-container">
+            <label for="s">Input S:</label>
+            <input type="number" id="s" min="0" max="10">
+        </div>
+        <div class="input-container">
+            <label for="d">Input D:</label>
+            <input type="number" id="d" min="0" max="10">
+        </div>
+        <button onclick="calculatePriority()">Calculate Priority</button>
+        <div class="result-container">
+            <p><strong>Multiplication Result:</strong> <span id="result"></span></p>
+            <p><strong>Priority:</strong> <span id="priority"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
